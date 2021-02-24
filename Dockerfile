@@ -3,7 +3,7 @@ FROM mltooling/ml-workspace-r
 USER root
 
 RUN conda install -y seaborn scikit-learn statsmodels numba pytables
-RUN conda install -y conda-forge python-igraph leidenalg
+RUN conda install -y python-igraph leidenalg
 RUN pip3 install -y scanpy
 RUN conda install -y tensorflow=1.13.1
 RUN conda install -y keras
