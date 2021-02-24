@@ -4,7 +4,7 @@ USER root
 
 RUN conda install -y seaborn scikit-learn statsmodels numba pytables
 RUN conda install -y python-igraph leidenalg
-RUN pip3 install -y scanpy
+RUN pip3 install scanpy
 RUN conda install -y tensorflow=1.13.1
 RUN conda install -y keras
 RUN conda install -y IPython
