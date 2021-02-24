@@ -1,3 +1,6 @@
+    docker run -i -t -p 8080:8080 -v /home/scchess/Sources:/workspace ml-workspace-r # On Rokny
+
+
 <h1 align="center">
     <a href="https://github.com/ml-tooling/ml-workspace" title="ML Workspace Home">
     <img width=50% alt="" src="https://github.com/ml-tooling/ml-workspace/raw/main/docs/images/ml-workspace-logo.png"> </a>
