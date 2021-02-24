@@ -1192,6 +1192,14 @@ LABEL \
 # TODO: VOLUME [ "/workspace" ]
 # TODO: WORKDIR /workspace?
 
+RUN conda install -y seaborn scikit-learn statsmodels numba pytables
+RUN conda install -y conda-forge python-igraph leidenalg
+RUN pip3 install -y scanpy
+RUN conda install -y tensorflow=1.13.1
+RUN conda install -y keras
+RUN conda install -y IPython
+RUN pip3 install -e git+https://github.com/marcoancona/DeepExplain.git#egg=deepexplain
+
 # use global option with tini to kill full process groups: https://github.com/krallin/tini#process-group-killing
 ENTRYPOINT ["/tini", "-g", "--"]
 
